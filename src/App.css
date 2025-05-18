@@ -1,0 +1,24 @@
+/* Keep existing styles or clear if not needed */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior: none; /* Prevents pull-to-refresh on mobile if menu is full screen */
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* Important if RadialMenu is direct child */
+}
+
+/* Add any global styles you might need */
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
