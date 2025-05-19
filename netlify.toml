@@ -1,21 +1,12 @@
-# Netlify configuration file
-
-# Build settings
 [build]
-  # Command to build your site
   command = "npm run build"
-  
-  # Directory to publish (relative to the root of your repo)
-  # Vite typically outputs to 'dist'
   publish = "dist"
 
-  # Explicitly set Node.js version
-  # Using a recent LTS version like "20" is a good practice.
-  node_version = "20" 
+[build.environment]
+  # Set the Node.js version if needed, e.g.,
+  # NODE_VERSION = "18"
+  # NPM_VERSION = "9"
 
-# Optional: Redirects and rewrites
-# For Single Page Applications (SPAs) like Vite/React,
-# you often need a rewrite rule to ensure all paths are handled by index.html.
 [[redirects]]
   from = "/*"
   to = "/index.html"
